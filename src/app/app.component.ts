@@ -137,7 +137,7 @@ interface Notification {
       </header>
 
       <!-- Main Layout Body -->
-      <main *ngIf="status === 'success' && data" id="dashboard-main" class="flex-1 max-w-7xl w-full mx-auto px-6 sm:px-8 py-8 space-y-12 relative">
+      <main *ngIf="status === 'success' && data" id="dashboard-main" class="flex-1 max-w-7xl w-full mx-auto px-6 sm:px-8 py-8 flex flex-col gap-12 relative">
         
         <!-- Live Data Feed Control Panel -->
         <div class="bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800/80 rounded-2xl p-4 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4 transition-colors duration-300">
@@ -213,12 +213,12 @@ interface Notification {
       </main>
 
       <!-- Loading/Error Fallback States -->
-      <div *ngIf="status === 'loading'" class="flex-1 flex flex-col items-center justify-center p-12 space-y-4">
+      <div *ngIf="status === 'loading'" class="flex-1 flex flex-col items-center justify-center p-12 gap-4">
         <svg xmlns="http://www.w3.org/2000/svg" class="animate-spin text-indigo-600 dark:text-indigo-400" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="2" y2="6"></line><line x1="12" x2="12" y1="18" y2="22"></line><line x1="4.93" x2="7.76" y1="4.93" y2="7.76"></line><line x1="16.24" x2="19.07" y1="16.24" y2="19.07"></line><line x1="2" x2="6" y1="12" y2="12"></line><line x1="18" x2="22" y1="12" y2="12"></line><line x1="4.93" x2="7.76" y1="19.07" y2="16.24"></line><line x1="16.24" x2="19.07" y1="7.76" y2="4.93"></line></svg>
         <p class="text-sm font-semibold text-slate-600 dark:text-slate-400 font-mono">Initializing enterprise ledger sync...</p>
       </div>
 
-      <div *ngIf="status === 'error'" class="flex-1 flex flex-col items-center justify-center p-12 space-y-4 text-center max-w-md mx-auto">
+      <div *ngIf="status === 'error'" class="flex-1 flex flex-col items-center justify-center p-12 gap-4 text-center max-w-md mx-auto">
         <svg xmlns="http://www.w3.org/2000/svg" class="text-rose-500" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" x2="12" y1="8" y2="12"></line><line x1="12" x2="12.01" y1="16" y2="16"></line></svg>
         <h3 class="text-lg font-bold text-slate-900 dark:text-white">Connection Interrupted</h3>
         <p class="text-xs text-slate-500 leading-relaxed">{{ errorMessage }}</p>
