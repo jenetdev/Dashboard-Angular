@@ -329,35 +329,7 @@ export class RevenueTrendChartComponent implements OnInit, OnChanges {
         </div>
 
         <!-- Legend -->
-        <div class="flex-1 space-y-2.5 w-full">
-          <div 
-            *ngFor="let item of segments; let i = index" 
-            class="flex items-center justify-between text-xs transition-all duration-200"
-            [class.scale-[1.03]]="hoveredSegment === i"
-            [class.opacity-60]="hoveredSegment !== null && hoveredSegment !== i"
-            (mouseover)="hoveredSegment = i"
-            (mouseleave)="hoveredSegment = null"
-          >
-            <div class="flex items-center gap-2">
-              <span
-                class="w-2.5 h-2.5 rounded-full shrink-0"
-                [style.background-color]="item.color"
-              ></span>
-              <span class="text-slate-600 dark:text-slate-300 font-medium truncate max-w-[110px] sm:max-w-none">
-                {{ item.name }}
-              </span>
-            </div>
-            <div class="flex items-center gap-3 font-mono">
-              <span class="text-slate-400 dark:text-slate-500">
-                {{ formatCurrency(item.value) }}
-              </span>
-              <span class="font-semibold text-slate-800 dark:text-slate-200 w-10 text-right">
-                {{ item.percentage }}%
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
+        
     </div>
   `
 })

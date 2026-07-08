@@ -100,9 +100,9 @@ interface Notification {
       <header id="dashboard-header" class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200/60 dark:border-slate-800/80 sticky top-0 z-20 py-5 px-6 sm:px-8 shadow-sm shadow-slate-100/50 dark:shadow-none transition-colors duration-300">
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <div>
-            <div class="flex items-center gap-2 text-indigo-600 dark:text-indigo-400 font-semibold text-xs tracking-wider uppercase mb-1">
+            <div class="flex items-center gap-2 text-indigo-600 dark:text-indigo-400 font-semibold text-xs tracking-wider uppercase mb-2.5">
               <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
-              <span>Ledger Dashboard</span>
+              <span>Ops Ledger Pipeline</span>
             </div>
             <h1 class="text-xl sm:text-2xl font-bold text-slate-950 dark:text-white tracking-tight">
               Revenue &amp; Orders Controller
@@ -137,7 +137,7 @@ interface Notification {
       </header>
 
       <!-- Main Layout Body -->
-      <main *ngIf="status === 'success' && data" id="dashboard-main" class="flex-1 max-w-7xl w-full mx-auto px-6 sm:px-8 py-8 space-y-8 relative">
+      <main *ngIf="status === 'success' && data" id="dashboard-main" class="flex-1 max-w-7xl w-full mx-auto px-6 sm:px-8 py-8 space-y-12 relative">
         
         <!-- Live Data Feed Control Panel -->
         <div class="bg-white dark:bg-slate-900 border border-slate-200/60 dark:border-slate-800/80 rounded-2xl p-4 shadow-sm flex flex-col md:flex-row items-center justify-between gap-4 transition-colors duration-300">
@@ -161,7 +161,7 @@ interface Notification {
           </div>
 
           <div class="flex flex-wrap items-center gap-3 w-full md:w-auto">
-   
+            
             <button
               (click)="triggerNewOrder()"
               class="px-3.5 py-2 bg-slate-900 hover:bg-slate-800 dark:bg-indigo-600 dark:hover:bg-indigo-500 active:scale-95 text-white rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 shadow-sm cursor-pointer transition-all w-full sm:w-auto ml-auto"
@@ -230,7 +230,7 @@ interface Notification {
       <!-- Footer Segment -->
       <footer id="dashboard-footer" class="py-6 border-t border-slate-200/60 dark:border-slate-800/80 bg-white/50 dark:bg-slate-950/40 text-center text-xs text-slate-400 dark:text-slate-500 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <span>Ledger Dashboard &bull; Secure Enterprise Environment</span>
+          <span>Ops Ledger Pipeline &bull; Secure Enterprise Environment</span>
           <span>© 2026 Local Portal Host &bull; Port 3000 Feed</span>
         </div>
       </footer>
