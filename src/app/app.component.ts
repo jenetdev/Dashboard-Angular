@@ -161,7 +161,6 @@ interface Notification {
           </div>
 
           <div class="flex flex-wrap items-center gap-3 w-full md:w-auto">
-            
             <button
               (click)="triggerNewOrder()"
               class="px-3.5 py-2 bg-slate-900 hover:bg-slate-800 dark:bg-indigo-600 dark:hover:bg-indigo-500 active:scale-95 text-white rounded-xl text-xs font-semibold flex items-center justify-center gap-1.5 shadow-sm cursor-pointer transition-all w-full sm:w-auto ml-auto"
