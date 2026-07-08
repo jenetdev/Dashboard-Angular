@@ -102,7 +102,7 @@ interface Notification {
           <div>
             <div class="flex items-center gap-2 text-indigo-600 dark:text-indigo-400 font-semibold text-xs tracking-wider uppercase mb-2.5">
               <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
-              <span>Ops Ledger Pipeline</span>
+              <span>Ledger Dashboard</span>
             </div>
             <h1 class="text-xl sm:text-2xl font-bold text-slate-950 dark:text-white tracking-tight">
               Revenue &amp; Orders Controller
@@ -233,7 +233,7 @@ interface Notification {
       <!-- Footer Segment -->
       <footer id="dashboard-footer" class="py-6 border-t border-slate-200/60 dark:border-slate-800/80 bg-white/50 dark:bg-slate-950/40 text-center text-xs text-slate-400 dark:text-slate-500 transition-colors duration-300">
         <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <span>Ops Ledger Pipeline &bull; Secure Enterprise Environment</span>
+          <span>Ledger Dashboard &bull; Secure Enterprise Environment</span>
           <span>© 2026 Local Portal Host &bull; Port 3000 Feed</span>
         </div>
       </footer>

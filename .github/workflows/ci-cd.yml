@@ -1,4 +1,4 @@
-name: Ops Ledger CI/CD
+name: Dashboard Angular CI/CD
 
 on:
   push:
