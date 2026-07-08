@@ -102,7 +102,7 @@ interface Notification {
           <div>
             <div class="flex items-center gap-2 text-indigo-600 dark:text-indigo-400 font-semibold text-xs tracking-wider uppercase mb-2.5">
               <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
-              <span>Ops Ledger Pipelineeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</span>
+              <span>Ops Ledger Pipeline</span>
             </div>
             <h1 class="text-xl sm:text-2xl font-bold text-slate-950 dark:text-white tracking-tight">
               Revenue &amp; Orders Controller
@@ -172,7 +172,7 @@ interface Notification {
         </div>
 
         <!-- Section 1: KPI Cards -->
-        <section id="summary-section" class="space-y-4">
+        <section id="summary-section" class="flex flex-col gap-4">
           <div class="flex items-center justify-between">
             <h2 class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest">
               Performance Indicators
@@ -181,11 +181,13 @@ interface Notification {
               &bull; Live stream auto-updating
             </span>
           </div>
-          <app-summary-cards [summary]="data.summary"></app-summary-cards>
+          <div>
+            <app-summary-cards [summary]="data.summary"></app-summary-cards>
+          </div>
         </section>
 
         <!-- Section 2: Visual Charts -->
-        <section id="trends-section" class="space-y-4">
+        <section id="trends-section" class="flex flex-col gap-4">
           <h2 class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest">
             Distribution &amp; Trajectory
           </h2>
@@ -200,11 +202,13 @@ interface Notification {
         </section>
 
         <!-- Section 3: Ledger DataTable -->
-        <section id="ledger-section" class="space-y-4">
+        <section id="ledger-section" class="flex flex-col gap-4">
           <h2 class="text-xs font-bold text-slate-400 dark:text-slate-500 uppercase tracking-widest">
             Audit Ledger
           </h2>
-          <app-data-table [orders]="data.orders"></app-data-table>
+          <div>
+            <app-data-table [orders]="data.orders"></app-data-table>
+          </div>
         </section>
       </main>
 
