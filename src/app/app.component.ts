@@ -102,7 +102,7 @@ interface Notification {
           <div>
             <div class="flex items-center gap-2 text-indigo-600 dark:text-indigo-400 font-semibold text-xs tracking-wider uppercase mb-2.5">
               <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
-              <span>Ops Ledger Pipeline</span>
+              <span>Ops Ledger Pipelineeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</span>
             </div>
             <h1 class="text-xl sm:text-2xl font-bold text-slate-950 dark:text-white tracking-tight">
               Revenue &amp; Orders Controller
