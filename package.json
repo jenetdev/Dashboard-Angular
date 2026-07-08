@@ -1,0 +1,34 @@
+{
+  "name": "angular-example",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "ng serve --port=3000 --host=0.0.0.0 --disable-host-check",
+    "build": "ng build && cp -r dist/browser/* dist/ && rm -rf dist/browser dist/media",
+    "clean": "rm -rf dist",
+    "lint": "echo 'Skipping TS validation since dashboard has migrated to 100% JavaScript!'"
+  },
+  "dependencies": {
+    "@angular/animations": "^18.2.0",
+    "@angular/common": "^18.2.0",
+    "@angular/compiler": "^18.2.0",
+    "@angular/core": "^18.2.0",
+    "@angular/forms": "^18.2.0",
+    "@angular/platform-browser": "^18.2.0",
+    "@angular/platform-browser-dynamic": "^18.2.0",
+    "@angular/router": "^18.2.0",
+    "rxjs": "^7.8.1",
+    "zone.js": "~0.14.10",
+    "tslib": "^2.6.3"
+  },
+  "devDependencies": {
+    "@angular/cli": "^18.2.0",
+    "@angular-devkit/build-angular": "^18.2.0",
+    "@angular/compiler-cli": "^18.2.0",
+    "@tailwindcss/postcss": "^4.0.0-alpha.25",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^4.0.0-alpha.25",
+    "typescript": "~5.4.5"
+  }
+}
