@@ -1,4 +1,4 @@
-# AWS S3 Hosting & CI/CD Steps
+<!-- # AWS S3 Hosting & CI/CD Steps
 
 A quick-reference guide of the exact steps followed to host the static React dashboard on AWS S3 with automated GitHub Actions CI/CD.
 
@@ -35,4 +35,4 @@ git add .
 git commit -m "Deploy to AWS"
 git push origin main
 ```
-Your pipeline triggers automatically, builds the project, and uploads it to S3.
+Your pipeline triggers automatically, builds the project, and uploads it to S3. -->
